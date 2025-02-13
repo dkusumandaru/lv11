@@ -1,0 +1,44 @@
+.sidebar li .submenu{ 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-left: 1rem; 
+	padding-right: 1rem;
+}
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--bs-dark);
+}
+.sidebar .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+ul.submenu {
+    list-style: none;
+}
+footer{
+	position: fixed;
+    bottom: 0px;
+    width: 100vw;
+}
+
+
+.text-secondary.text-xs.font-weight-bold span.material-symbols-rounded {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.btn span.material-symbols-rounded{
+    font-size: 0.8rem;
+    padding: 0px;
+    margin-top: -3px;
+}
+
+.navbar-vertical.bg-white {
+    border: 1px solid rgb(241 40 54 / 0.50)!important;
+}
+
+hr.horizontal.dark {
+    background-image: linear-gradient(to right, rgb(241 40 54 ), rgb(241 40 54), rgb(241 40 54));
+}
