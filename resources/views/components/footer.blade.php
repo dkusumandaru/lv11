@@ -7,7 +7,7 @@
                     <script>
                         document.write(new Date().getFullYear())
                     </script> |
-                    <a href="https://www.jicindonesia.com" class="font-weight-bold" target="_blank">JIC Indonesia</a>. All rights reserved.
+                    <a href="https://www.jicindonesia.com" class="font-weight-bold" target="_blank">{{ $slot }}</a>. All rights reserved.
                 </div>
             </div>
             <div class="col-lg-6">

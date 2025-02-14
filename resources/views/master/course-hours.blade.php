@@ -19,55 +19,180 @@
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Period</th>
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Section</th>
-                        <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">start_time</th>
-                        <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">end_time</th>
+                        <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">start time</th>
+                        <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">end time</th>
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                    
+                        <tr>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">1</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column justify-content-center text-center">
+                                    <h6 class="mb-0 text-sm">I</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">1</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">09:00</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">10.30</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">edit_square</span> Edit
+                                </a>
 
+                                <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">delete</span> Remove
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">2</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column justify-content-center text-center">
+                                    <h6 class="mb-0 text-sm">I</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">2</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">10:45</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">12:15</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">edit_square</span> Edit
+                                </a>
 
+                                <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">delete</span> Remove
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">1</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column justify-content-center text-center">
+                                    <h6 class="mb-0 text-sm">II</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">1</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">13.00</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">14.30</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">edit_square</span> Edit
+                                </a>
 
+                                <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">delete</span> Remove
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">2</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column justify-content-center text-center">
+                                    <h6 class="mb-0 text-sm">II</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">2</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">14:45</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">16:00</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">edit_square</span> Edit
+                                </a>
 
-                        <td class="align-middle text-center">
-                            <p class="text-xs font-weight-bold mb-0"></p>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">I</h6>
-                            </div>
-                        </td>
-                        <td class="align-middle text-center">
-                            <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                <span class="material-symbols-rounded">edit_square</span> Edit
-                            </a>
+                                <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">delete</span> Remove
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">1</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column justify-content-center text-center">
+                                    <h6 class="mb-0 text-sm">III</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">1</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">15.30</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">17.00</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">edit_square</span> Edit
+                                </a>
 
-                            <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                <span class="material-symbols-rounded">delete</span> Remove
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="align-middle text-center">
-                            <p class="text-xs font-weight-bold mb-0"></p>
-                        </td>
-                        <td>
-                            <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">II</h6>
-                            </div>
-                        </td>
-                        <td class="align-middle text-center">
-                            <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                <span class="material-symbols-rounded">edit_square</span> Edit
-                            </a>
+                                <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">delete</span> Remove
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">2</p>
+                            </td>
+                            <td>
+                                <div class="d-flex flex-column justify-content-center text-center">
+                                    <h6 class="mb-0 text-sm">III</h6>
+                                </div>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">2</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">17:30</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <p class="text-xs font-weight-bold mb-0">19:00</p>
+                            </td>
+                            <td class="align-middle text-center">
+                                <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">edit_square</span> Edit
+                                </a>
 
-                            <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                <span class="material-symbols-rounded">delete</span> Remove
-                            </a>
-                        </td>
-                    </tr>
+                                <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                                    <span class="material-symbols-rounded">delete</span> Remove
+                                </a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 </div>

@@ -42,3 +42,7 @@ footer{
 hr.horizontal.dark {
     background-image: linear-gradient(to right, rgb(241 40 54 ), rgb(241 40 54), rgb(241 40 54));
 }
+
+.navbar-brand{
+    background-color: #fff;
+}
