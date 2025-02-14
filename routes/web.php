@@ -11,22 +11,30 @@ Route::get('/test', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('user-admin.dashboard', ['title' => 'Dashboard', 'app' => 'JIC Indonesia']);
+    return view('user-admin.dashboard', ['title' => 'Dashboard', 'app' => config('app_details.name')]);
 });
 
 Route::get('/payment/management', function () {
-    return view('user-admin.payment', ['title' => 'Payment Management', 'app' => 'JIC Indonesia']);
+    return view('user-admin.payment', ['title' => 'Payment Management', 'app' => config('app_details.name')]);
 });
 
 
 Route::get('/master/program', function () {
-    return view('master.program', ['title' => 'Master Program', 'subMenu'=>'Course Management', 'app' => 'JIC Indonesia']);
+    return view('master.program', ['title' => 'Master Program', 'subMenu'=>'Course Management', 'app' => config('app_details.name')]);
 });
 
 Route::get('/master/course', function () {
-    return view('master.course', ['title' => 'Master Course', 'subMenu'=>'Course Management', 'app' => 'JIC Indonesia']);
+    return view('master.course', ['title' => 'Master Course', 'subMenu'=>'Course Management', 'app' => config('app_details.name')]);
 });
 
 Route::get('/master/course/hours', function () {
-    return view('master.course-hours', ['title' => 'Master Course Hours', 'subMenu'=>'Course Management', 'app' => 'JIC Indonesia']);
+    return view('master.course-hours', ['title' => 'Master Course Hours', 'subMenu'=>'Course Management', 'app' => config('app_details.name')]);
+});
+
+Route::get('/schedule', function () {
+    return view('user-admin.schedule', ['title' => 'Schedule', 'subMenu'=>'Course Management', 'app' => config('app_details.name')]);
+});
+
+Route::get('/attendance/report', function () {
+    return view('user-admin.schedule', ['title' => 'Schedule', 'subMenu'=>'Course Management', 'app' => config('app_details.name')]);
 });

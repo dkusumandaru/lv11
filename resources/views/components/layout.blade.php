@@ -26,7 +26,7 @@
         {{ $slot }}
     </div>
 
-    <x-footer></x-footer>
+    <x-footer>{{  $app  }}</x-footer>
   </main>
 
   <x-foot></x-foot>

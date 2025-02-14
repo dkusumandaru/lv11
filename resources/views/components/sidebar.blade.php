@@ -2,8 +2,9 @@
 <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand px-4 py-3 m-0" href="#" >
-        <img src="../assets/img/logo-ct-dark.png" class="navbar-brand-img" width="26" height="26" alt="main_logo">
-        <span class="ms-1 text-sm text-white">JIC - Indonesia</span>
+        <img src="{{ asset( config('app_details.logo')) }}" class="navbar-brand-img" alt="main_logo" width="132">
+        {{-- width="26" height="26" --}}
+        {{-- <span class="ms-1 text-sm text-white"></span> --}}
       </a>
     </div>
     <hr class="horizontal dark mt-0 mb-2">
@@ -16,10 +17,6 @@
           <i class="material-symbols-rounded opacity-5">dashboard</i>
           <span class="nav-link-text ms-1">Dashboard</span>
         </x-sidebar-link>
-        <!-- <li class="nav-item">
-          <a class="nav-link {{ request()->is('dashboard')? 'active bg-red text-white':'text-white' }}" href="/dashboard">  --><!--  bg-gradient-dark -->
-        <!--  </a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link text-white @if(empty($subMenu) && $subMenu != 'Users Management') collapsed @endif" data-bs-toggle="collapse" data-bs-target="#user_management" href="#">
             <span class="material-symbols-rounded opacity-5">manage_accounts</span>
@@ -71,13 +68,13 @@
           <li class="nav-item">
             <x-sidebar-link href="/master/course" :active="request()->is('master/course')">
               <span class="material-symbols-rounded opacity-5">local_library</span>
-              <span class="nav-link-text ms-1" id="sidebar_text_master-course"> Master Course (Mata Pelajaran)</span>
+              <span class="nav-link-text ms-1" id="sidebar_text_master-course"> Master Course</span>
             </x-sidebar-link>
           </li>
           <li class="nav-item">
             <x-sidebar-link href="/master/course/hours" :active="request()->is('master/course/hours')">
               <span class="material-symbols-rounded opacity-5">manage_history</span>
-              <span class="nav-link-text ms-1" id="sidebar_text_master-hours"> Master Hours Course</span>
+              <span class="nav-link-text ms-1" id="sidebar_text_master-hours"> Master Course Hours</span>
             </x-sidebar-link>
           </li>
           <li class="nav-item">
@@ -124,7 +121,7 @@
         <li class="nav-item">
           <a class="nav-link text-white" href="../pages/profile.html">
             <i class="material-symbols-rounded fixed-plugin-button-nav opacity-5">settings</i>            
-            <span class="nav-link-text ms-1">Config</span>
+            <span class="nav-link-text ms-1">Setting</span>
           </a>
         </li>
         <li class="nav-item">
