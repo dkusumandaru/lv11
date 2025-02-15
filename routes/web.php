@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return view('user-admin.dashboard', ['title' => 'Dashboard', 'app' => config('app_details.name')]);
 });
 
 Route::get('/test', function () {
