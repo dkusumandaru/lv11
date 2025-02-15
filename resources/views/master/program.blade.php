@@ -2,13 +2,21 @@
     <x-slot:title>{{ $title }}</x-slot:title>
     <x-slot:subMenu>{{ $subMenu }}</x-slot:subMenu>
     <x-slot:app>{{ $app }}</x-slot:app>
+    <x-slot:menu>{{ $app }}</x-slot:app>
 
     <div class="row">
         <div class="col-12">
             <div class="card my-4">
             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                 <div class="bg-gradient-dark shadow-dark border-radius-lg pt-4 pb-3">
-                <h6 class="text-white text-capitalize ps-3">{{ $title }}</h6>
+                    <h6 class="text-white text-capitalize ps-3">
+                        {{ $title }}
+                        {{-- btn btn-block btn-light mb-3 --}}
+                        <button type="button" class="btn toast-btn bg-red mb-4 me-3 float-end text-white" data-bs-toggle="modal" data-bs-target="#add-master-program">
+                            <span class="material-symbols-rounded">add_circle</span>
+                            Add Program
+                        </button>
+                    </h6>
                 </div>
             </div>
             <div class="card-body px-0 pb-2">
@@ -32,10 +40,9 @@
                             </div>
                         </td>
                         <td class="align-middle text-center">
-                            <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
+                            <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-bs-toggle="modal" data-bs-target="#edit-master-program" data-original-title="Edit user">
                                 <span class="material-symbols-rounded">edit_square</span> Edit
                             </a>
-
                             <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                                 <span class="material-symbols-rounded">delete</span> Remove
                             </a>
@@ -86,4 +93,33 @@
             </div>
         </div>
     </div>
+
+    <x-modal id="add-master-program" title="Add Program" action="#" method="POST">
+        @slot('form')
+            @csrf
+            <div class="input-group input-group-outline my-1">
+                <label class="form-label">Nama Program</label>
+                <input type="text" name="programName" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">
+                    <span class="material-symbols-rounded">save</span> Save
+                </button>
+            </div>
+        @endslot
+    </x-modal>
+    <x-modal id="edit-master-program" title="Edit Program" action="#" method="PUT">
+        @slot('form')
+            @csrf
+            <div class="input-group input-group-outline my-1">
+                <label class="form-label">Nama Program</label>
+                <input type="text" name="programNameEdit" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" value="">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">
+                    <span class="material-symbols-rounded">save</span> Save
+                </button>
+            </div>
+        @endslot
+    </x-modal>
 </x-layout>
