@@ -38,3 +38,7 @@ Route::get('/schedule', function () {
 Route::get('/attendance/report', function () {
     return view('user-admin.schedule', ['title' => 'Schedule', 'subMenu'=>'Course Management', 'app' => config('app_details.name')]);
 });
+
+Route::get('/master/role', function () {
+    return view('user-management.master-role', ['title' => 'Master Role', 'subMenu'=>'User Management', 'app' => config('app_details.name')]);
+});
