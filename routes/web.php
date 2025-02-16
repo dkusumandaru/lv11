@@ -71,3 +71,11 @@ Route::get('/master/role', function () {
 Route::get('/master/role/edit', function () {
     return view('user-management.master-role.v_master-role-edit', ['title' => 'Master Edit/Add', 'subMenu1'=>'Master Role', 'subMenu'=>'User Management', 'app' => config('app_details.name')]);
 });
+
+// Master Branch
+Route::get('/master/cabang', function () {
+    return view('master-branch.v_master-branch', ['title' => 'Master Edit/Add', 'subMenu1'=>'Master Role', 'subMenu'=>'User Management', 'app' => config('app_details.name')]);
+});
+Route::get('/master/cabang/edit', function () {
+    return view('master-branch.v_master-branch-edit', ['title' => 'Master Edit/Add', 'subMenu1'=>'Master Role', 'subMenu'=>'User Management', 'app' => config('app_details.name')]);
+});

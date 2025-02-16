@@ -108,7 +108,7 @@
           </a>
         </li> -->
             <li class="nav-item">
-                <a class="nav-link text-white" href="../pages/rtl.html">
+                <a class="nav-link text-white" href="/master/cabang">
                     <span class="material-symbols-rounded opacity-5">edit_location_alt</span>
                     <span class="nav-link-text ms-1">Master Branch</span>
                 </a>
