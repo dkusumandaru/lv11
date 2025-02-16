@@ -36,20 +36,20 @@
                     <!-- <a class="nav-link text-white" href="./um_roles.html"> Master Role </a> -->
                 </li>
                 <li class="nav-item">
-                    <x-sidebar-link href="/user" :active="request()->is('user')">
+                    <x-sidebar-link href="/master/user" :active="request()->is('user')">
                         <span class="material-symbols-rounded opacity-5">person</span>
                         <span class="nav-link-text ms-1">User</span>
                     </x-sidebar-link>
                 </li>
                 <li class="nav-item">
-                    <x-sidebar-link href="/student" :active="request()->is('student')">
+                    <x-sidebar-link href="/master/student" :active="request()->is('student')">
                         <span class="material-symbols-rounded opacity-5">school</span>
                         <span class="nav-link-text ms-1">Student</span>
                     </x-sidebar-link>
                     <!-- <a class="nav-link text-white" href="./um_students.html"> Student</a> -->
                 </li>
                 <li class="nav-item">
-                    <x-sidebar-link href="/company" :active="request()->is('company')">
+                    <x-sidebar-link href="/master/company" :active="request()->is('company')">
                         <span class="material-symbols-rounded opacity-5">apartment</span>
                         <span class="nav-link-text ms-1">Company</span>
                     </x-sidebar-link>
