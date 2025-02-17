@@ -55,6 +55,43 @@
                     </x-sidebar-link>
                 </li>
             </ul>
+            <li class="nav-item">
+                <a class="nav-link text-white @if (empty($subMenu) && $subMenu != 'Programs Management') collapsed @endif"
+                    data-bs-toggle="collapse" data-bs-target="#program_management" href="#">
+                    <span class="material-symbols-rounded opacity-5">manage_accounts</span>
+                    <span class="nav-link-text ms-1" id="sidebar_text_user-management"> Program Management</span>
+                </a>
+            </li>
+            <ul id="program_management" class="submenu collapse  @if (!empty($subMenu) && $subMenu == 'Programs Management') show @endif"
+                data-bs-parent="#nav_accordion">
+                <li class="nav-item">
+                    <x-sidebar-link href="/master/program" :active="request()->is('master/program')">
+                        <span class="material-symbols-rounded opacity-5">developer_guide</span>
+                        <span class="nav-link-text ms-1" id="sidebar_text_master-program"> Master Program</span>
+                    </x-sidebar-link>
+                </li>
+                <li class="nav-item">
+                    <x-sidebar-link href="/master/batch" :active="request()->is('user')">
+
+
+                        <span class="material-symbols-rounded opacity-5">person</span>
+                        <span class="nav-link-text ms-1">Master Batch</span>
+                    </x-sidebar-link>
+                </li>
+                <li class="nav-item">
+                    <x-sidebar-link href="/master/student" :active="request()->is('student')">
+                        <span class="material-symbols-rounded opacity-5">school</span>
+                        <span class="nav-link-text ms-1">Student</span>
+                    </x-sidebar-link>
+                    <!-- <a class="nav-link text-white" href="./um_students.html"> Student</a> -->
+                </li>
+                <li class="nav-item">
+                    <x-sidebar-link href="/master/company" :active="request()->is('company')">
+                        <span class="material-symbols-rounded opacity-5">apartment</span>
+                        <span class="nav-link-text ms-1">Company</span>
+                    </x-sidebar-link>
+                </li>
+            </ul>
 
             <li class="nav-item">
                 <a class="nav-link text-white @if (empty($subMenu) && $subMenu != 'Course Management') collapsed @endif"

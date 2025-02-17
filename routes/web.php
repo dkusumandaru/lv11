@@ -79,3 +79,7 @@ Route::get('/master/cabang', function () {
 Route::get('/master/cabang/edit', function () {
     return view('master-branch.v_master-branch-edit', ['title' => 'Master Edit/Add', 'subMenu1'=>'Master Role', 'subMenu'=>'User Management', 'app' => config('app_details.name')]);
 });
+
+Route::get('/master/batch', function () {
+    return view('master.batch', ['title' => 'master batch', 'subMenu' => 'Program Manajemen', 'app' => config('app_details.name')]);
+});
