@@ -19,10 +19,10 @@
                             <label class="form-label">Nama User</label>
                             <input type="MasterUser" class="form-control">
                         </div>
-                        <div class="input-group input-group-outline my-3">
+                        {{-- <div class="input-group input-group-outline my-3">
                             <label class="form-label">E-mail</label>
                             <input type="MasterUserEmail" class="form-control">
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-primary">Simpan</button>
