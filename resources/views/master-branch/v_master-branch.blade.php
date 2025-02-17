@@ -73,7 +73,7 @@
                                         <a href="/master/cabang/edit"
                                             class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs"
                                             data-toggle="tooltip" data-original-title="Edit user">
-                                            <span class="material-symbols-rounded">edit_square</span> Edit
+                                            <span class="material-symbols-rounded">edit_square</span>Edit
                                         </a>
                                         <a href="javascript:;"
                                             class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs"
