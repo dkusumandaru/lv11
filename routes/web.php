@@ -104,3 +104,13 @@ Route::get('/attendance/report', function () {
 Route::get('/payment/management', function () {
     return view('user-admin.payment', ['title' => 'Payment Management', 'app' => config('app_details.name')]);
 });
+
+// login page
+Route::get('/login', function () {
+    return view('login', ['title' => 'Login', 'app' => config('app_details.name')]);
+});
+
+// profile page
+Route::get('/profile', function () {
+    return view('profiles.profile', ['title' => 'Profile ABC','subMenu' => 'Profile', 'app' => config('app_details.name')]);
+});
