@@ -56,14 +56,26 @@
                 </li>
             </ul>
             <li class="nav-item">
-                <a class="nav-link text-white @if (empty($subMenu) && $subMenu != 'Programs Management') collapsed @endif"
+                <a class="nav-link text-white @if (empty($subMenu) && $subMenu != 'Program Management') collapsed @endif"
                     data-bs-toggle="collapse" data-bs-target="#program_management" href="#">
-                    <span class="material-symbols-rounded opacity-5">manage_accounts</span>
-                    <span class="nav-link-text ms-1" id="sidebar_text_user-management"> Program Management</span>
+                    <span class="material-symbols-rounded  opacity-5">engineering</span>
+                    <span class="nav-link-text ms-1" id="sidebar_text_program-management"> Program Management</span>
                 </a>
             </li>
-            <ul id="program_management" class="submenu collapse  @if (!empty($subMenu) && $subMenu == 'Programs Management') show @endif"
+            <ul id="program_management" class="submenu collapse  @if (!empty($subMenu) && $subMenu == 'Program Management') show @endif"
                 data-bs-parent="#nav_accordion">
+                <li class="nav-item">
+                    <x-sidebar-link href="/master/branch" :active="request()->is('master/branch')">
+                        <span class="material-symbols-rounded opacity-5">edit_location_alt</span>
+                        <span class="nav-link-text ms-1">Master Branch</span>
+                    </x-sidebar-link>
+                </li>
+                <li class="nav-item">
+                    <x-sidebar-link href="/master/batch" :active="request()->is('master/batch')">
+                        <span class="material-symbols-rounded opacity-5">person</span>
+                        <span class="nav-link-text ms-1">Master Batch</span>
+                    </x-sidebar-link>
+                </li>                
                 <li class="nav-item">
                     <x-sidebar-link href="/master/program" :active="request()->is('master/program')">
                         <span class="material-symbols-rounded opacity-5">developer_guide</span>
@@ -71,24 +83,9 @@
                     </x-sidebar-link>
                 </li>
                 <li class="nav-item">
-                    <x-sidebar-link href="/master/batch" :active="request()->is('user')">
-
-
-                        <span class="material-symbols-rounded opacity-5">person</span>
-                        <span class="nav-link-text ms-1">Master Batch</span>
-                    </x-sidebar-link>
-                </li>
-                <li class="nav-item">
-                    <x-sidebar-link href="/master/student" :active="request()->is('student')">
+                    <x-sidebar-link href="/program" :active="request()->is('program')">
                         <span class="material-symbols-rounded opacity-5">school</span>
-                        <span class="nav-link-text ms-1">Student</span>
-                    </x-sidebar-link>
-                    <!-- <a class="nav-link text-white" href="./um_students.html"> Student</a> -->
-                </li>
-                <li class="nav-item">
-                    <x-sidebar-link href="/master/company" :active="request()->is('company')">
-                        <span class="material-symbols-rounded opacity-5">apartment</span>
-                        <span class="nav-link-text ms-1">Company</span>
+                        <span class="nav-link-text ms-1">Program Details</span>
                     </x-sidebar-link>
                 </li>
             </ul>
@@ -102,12 +99,12 @@
             </li>
             <ul id="course_management" class="submenu collapse @if (!empty($subMenu) && $subMenu == 'Course Management') show @endif"
                 data-bs-parent="#nav_accordion">
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <x-sidebar-link href="/master/program" :active="request()->is('master/program')">
                         <span class="material-symbols-rounded opacity-5">developer_guide</span>
                         <span class="nav-link-text ms-1" id="sidebar_text_master-program"> Master Program</span>
                     </x-sidebar-link>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <x-sidebar-link href="/master/course" :active="request()->is('master/course')">
                         <span class="material-symbols-rounded opacity-5">local_library</span>
@@ -118,6 +115,12 @@
                     <x-sidebar-link href="/master/course/hours" :active="request()->is('master/course/hours')">
                         <span class="material-symbols-rounded opacity-5">manage_history</span>
                         <span class="nav-link-text ms-1" id="sidebar_text_master-hours"> Master Course Hours</span>
+                    </x-sidebar-link>
+                </li>
+                <li class="nav-item">
+                    <x-sidebar-link href="/master/class" :active="request()->is('master/class')">
+                        <span class="material-symbols-rounded  opacity-5">room_preferences</span>
+                        <span class="nav-link-text ms-1">Master Class</span>
                     </x-sidebar-link>
                 </li>
                 <li class="nav-item">
@@ -144,12 +147,12 @@
             
           </a>
         </li> -->
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link text-white" href="/master/cabang">
                     <span class="material-symbols-rounded opacity-5">edit_location_alt</span>
                     <span class="nav-link-text ms-1">Master Branch</span>
                 </a>
-            </li>
+            </li> --}}
 
 
             <li class="nav-item">

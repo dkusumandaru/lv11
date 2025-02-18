@@ -12,9 +12,9 @@
                     <h6 class="text-white text-capitalize ps-3">
                         {{ $title }}
                         {{-- btn btn-block btn-light mb-3 --}}
-                        <button type="button" class="btn toast-btn bg-red mb-4 me-3 float-end text-white" data-bs-toggle="modal" data-bs-target="#add-master-program">
+                        <button type="button" class="btn toast-btn bg-red mb-4 me-3 float-end text-white" data-bs-toggle="modal" data-bs-target="#add-master-class">
                             <span class="material-symbols-rounded">add_circle</span>
-                            Add Program
+                            Add Class
                         </button>
                     </h6>
                 </div>
@@ -36,11 +36,11 @@
                         </td>
                         <td>
                             <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">Tokuteiginou</h6>
+                                <h6 class="mb-0 text-sm">Pagi</h6>
                             </div>
                         </td>
                         <td class="align-middle text-center">
-                            <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-bs-toggle="modal" data-bs-target="#edit-master-program" data-original-title="Edit user">
+                            <a href="javascript:;" class="btn bg-gradient-success w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-bs-toggle="modal" data-bs-target="#edit-master-class" data-original-title="Edit user">
                                 <span class="material-symbols-rounded">edit_square</span> Edit
                             </a>
                             <a href="javascript:;" class="btn bg-gradient-danger w-20 mb-0 p-1 toast-btn font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -54,7 +54,7 @@
                         </td>
                         <td>
                             <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">Internship</h6>
+                                <h6 class="mb-0 text-sm">Siang</h6>
                             </div>
                         </td>
                         <td class="align-middle text-center">
@@ -73,7 +73,7 @@
                         </td>
                         <td>
                             <div class="d-flex flex-column justify-content-center">
-                                <h6 class="mb-0 text-sm">Magang Teknikal</h6>
+                                <h6 class="mb-0 text-sm">Sore</h6>
                             </div>
                         </td>
                         <td class="align-middle text-center">
@@ -94,11 +94,11 @@
         </div>
     </div>
 
-    <x-modal id="add-master-program" title="Add Program" action="#" method="POST">
+    <x-modal id="add-master-class" title="Add Class" action="#" method="POST">
         @slot('form')
             @csrf
             <div class="input-group input-group-outline my-1">
-                <label class="form-label">Name Program</label>
+                <label class="form-label">Name</label>
                 <input type="text" name="programName" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
             </div>
             <div class="text-center">
@@ -108,11 +108,11 @@
             </div>
         @endslot
     </x-modal>
-    <x-modal id="edit-master-program" title="Edit Program" action="#" method="PUT">
+    <x-modal id="edit-master-class" title="Edit Class" action="#" method="PUT">
         @slot('form')
             @csrf
             <div class="input-group input-group-outline my-1">
-                <label class="form-label">Name Program</label>
+                <label class="form-label">Name</label>
                 <input type="text" name="programNameEdit" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)" value="">
             </div>
             <div class="text-center">

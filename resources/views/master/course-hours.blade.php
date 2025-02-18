@@ -23,8 +23,6 @@
                     <thead>
                     <tr>
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                        <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Period</th>
-                        <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Section</th>
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">start time</th>
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">end time</th>
                         <th rowspan="2" class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
@@ -32,14 +30,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="align-middle text-center">
-                                <p class="text-xs font-weight-bold mb-0">1</p>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-column justify-content-center text-center">
-                                    <h6 class="mb-0 text-sm">I</h6>
-                                </div>
-                            </td>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">1</p>
                             </td>
@@ -63,14 +53,6 @@
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">2</p>
                             </td>
-                            <td>
-                                <div class="d-flex flex-column justify-content-center text-center">
-                                    <h6 class="mb-0 text-sm">I</h6>
-                                </div>
-                            </td>
-                            <td class="align-middle text-center">
-                                <p class="text-xs font-weight-bold mb-0">2</p>
-                            </td>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">10:45</p>
                             </td>
@@ -90,14 +72,6 @@
                         <tr>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">3</p>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-column justify-content-center text-center">
-                                    <h6 class="mb-0 text-sm">II</h6>
-                                </div>
-                            </td>
-                            <td class="align-middle text-center">
-                                <p class="text-xs font-weight-bold mb-0">1</p>
                             </td>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">13.00</p>
@@ -119,14 +93,6 @@
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">4</p>
                             </td>
-                            <td>
-                                <div class="d-flex flex-column justify-content-center text-center">
-                                    <h6 class="mb-0 text-sm">II</h6>
-                                </div>
-                            </td>
-                            <td class="align-middle text-center">
-                                <p class="text-xs font-weight-bold mb-0">2</p>
-                            </td>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">14:45</p>
                             </td>
@@ -147,14 +113,6 @@
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">5</p>
                             </td>
-                            <td>
-                                <div class="d-flex flex-column justify-content-center text-center">
-                                    <h6 class="mb-0 text-sm">III</h6>
-                                </div>
-                            </td>
-                            <td class="align-middle text-center">
-                                <p class="text-xs font-weight-bold mb-0">1</p>
-                            </td>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">15.30</p>
                             </td>
@@ -174,14 +132,6 @@
                         <tr>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">6</p>
-                            </td>
-                            <td>
-                                <div class="d-flex flex-column justify-content-center text-center">
-                                    <h6 class="mb-0 text-sm">III</h6>
-                                </div>
-                            </td>
-                            <td class="align-middle text-center">
-                                <p class="text-xs font-weight-bold mb-0">2</p>
                             </td>
                             <td class="align-middle text-center">
                                 <p class="text-xs font-weight-bold mb-0">17:30</p>
@@ -212,14 +162,6 @@
         @slot('form')
             @csrf
             <div class="input-group input-group-outline my-3">
-                <label class="form-label">Period</label>
-                <input type="text" name="periodCourseHours" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
-            </div>
-            <div class="input-group input-group-outline my-3">
-                <label class="form-label">Section</label>
-                <input type="number" name="sectionCourseHours" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
-            </div>
-            <div class="input-group input-group-outline my-3">
                 <label class="form-label">Start Time</label>
                 <input type="time" name="startTimeCourseHours" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
             </div>
@@ -237,14 +179,6 @@
     <x-modal id="edit-course-hours" title="Edit Course Hours" action="#" method="PUT">
         @slot('form')
             @csrf
-            <div class="input-group input-group-outline my-3">
-                <label class="form-label">Period</label>
-                <input type="text" name="periodCourseHours" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
-            </div>
-            <div class="input-group input-group-outline my-3">
-                <label class="form-label">Section</label>
-                <input type="number" name="sectionCourseHours" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
-            </div>
             <div class="input-group input-group-outline my-3">
                 <label class="form-label">Start Time</label>
                 <input type="time" name="startTimeCourseHours" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
