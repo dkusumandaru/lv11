@@ -57,20 +57,15 @@ Route::get('/master/role/edit', function () {
 Route::get('/master/branch', function () {
     return view('master.branch', ['title' => 'Master Branch', 'subMenu'=>'Program Management', 'app' => config('app_details.name')]);
 });
-
-
 Route::get('/master/batch', function () {
     return view('master.batch', ['title' => 'Master Batch', 'subMenu' => 'Program Management', 'app' => config('app_details.name')]);
 });
-
 Route::get('/master/program', function () {
     return view('master.program', ['title' => 'Master Program', 'subMenu'=>'Program Management', 'app' => config('app_details.name')]);
 });
-
 Route::get('/program', function () {
     return view('branch.program-details', ['title' => 'Program', 'subMenu'=>'Program Management', 'app' => config('app_details.name')]);
 });
-
 Route::get('/master/cabang', function () {
     return view('master-branch.v_master-branch', ['title' => 'Master Edit/Add', 'subMenu1'=>'Master Role', 'subMenu'=>'User Management', 'app' => config('app_details.name')]);
 });
