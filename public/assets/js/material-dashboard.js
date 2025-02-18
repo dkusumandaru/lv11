@@ -51,6 +51,13 @@ function defocused(el) {
   }
 }
 
+function selectedOnFocus(el){
+  // this.parentElement.classList.add("is-filled")
+  if (el.parentElement.classList.contains('input-group')) {
+    el.parentElement.classList.add("is-filled");
+  }
+}
+
 // helper for adding on all elements multiple attributes
 function setAttributes(el, options) {
   Object.keys(options).forEach(function(attr) {
@@ -62,6 +69,12 @@ function setAttributes(el, options) {
 if (document.querySelectorAll('.input-group').length != 0) {
   var allInputs = document.querySelectorAll('input.form-control');
   allInputs.forEach(el => setAttributes(el, {
+    "onfocus": "focused(this)",
+    "onfocusout": "defocused(this)"
+  }));
+
+  var allInputsSelect = document.querySelectorAll('select.form-control');
+  allInputsSelect.forEach(el => setAttributes(el, {
     "onfocus": "focused(this)",
     "onfocusout": "defocused(this)"
   }));
