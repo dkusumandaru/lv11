@@ -75,7 +75,7 @@
                         <span class="material-symbols-rounded opacity-5">person</span>
                         <span class="nav-link-text ms-1">Master Batch</span>
                     </x-sidebar-link>
-                </li>                
+                </li>
                 <li class="nav-item">
                     <x-sidebar-link href="/master/program" :active="request()->is('master/program')">
                         <span class="material-symbols-rounded opacity-5">developer_guide</span>
@@ -171,7 +171,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="../pages/profile.html">
+                <a class="nav-link text-white" href="/profile">
                     <span class="material-symbols-rounded fixed-plugin-button-nav opacity-5">account_circle</span>
                     <span class="nav-link-text ms-1">Profile</span>
                 </a>
